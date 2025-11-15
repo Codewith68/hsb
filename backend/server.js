@@ -1,6 +1,12 @@
 import dotenv from "dotenv";
 import app from "./app.js";
 import cloudinary from "cloudinary";
+import express from "express";
+import cors from "cors";
+
+app.use(cors());
+app.use(express.json());
+
 
 dotenv.config();
 
